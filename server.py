@@ -70,8 +70,7 @@ def run_server(port=8000):
         httpd.serve_forever()
     except KeyboardInterrupt:
         print("\n🛑 Server stopped.")
->
-                    </        httpd.server_close()
+        httpd.server_close()
 
 if __name__ == '__main__':
     run_server(port=8000)
